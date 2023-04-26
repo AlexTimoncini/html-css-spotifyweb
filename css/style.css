@@ -32,10 +32,10 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-shrink: 0;
     font-size: 0.8rem;
     font-weight: 600;
     color: #6e6e6e;
+    overflow: hidden;
 }
 
 .side-bar .wrapper{
@@ -43,7 +43,6 @@ body{
     align-items: center;
     width: 100%;
 }
-
 
 .logo-small{
     filter: invert(1);
@@ -147,6 +146,25 @@ body{
     overflow-y: auto;
 }
 
+.upgrade-banner{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: end;
+    padding: 1.5rem;
+}
+
+.upgrade-btn{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.7rem 2.5rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
 /* COMMAND-BAR SECTION */
 .command-bar{
     height: 90px;
@@ -154,7 +172,7 @@ body{
 }
 
 /*--------------MEDIA QUERIES--------------*/
-@media screen and (min-width: 639px) {
+@media screen and (min-width: 639px){
     .hidden{
         display: block;
     }
@@ -196,5 +214,10 @@ body{
 
     .profile{
         padding-top: 1rem;
+    }
+
+    /* MAIN SECTION */
+    .main{
+        width: calc(100% - 230px);
     }
 }
