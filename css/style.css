@@ -19,6 +19,41 @@ box-sizing: border-box;
     width: 50px;
     height: calc(100vh - 90px);
     background-color: #000000;
+    padding-top: 0.25rem;
+    padding-bottom: 0.56rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side-bar .wrapper{
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-small{
+    filter: invert(1);
+    padding-bottom: 1rem;
+}
+
+.section-icon{
+    width: 25px;
+    display: block;
+    padding-bottom: 0.8rem;
+}
+
+.download-btn{
+    width: 15px;
+    margin-bottom: 1rem;
+}
+
+.profile-btn{
+    width: 25px;
+    height: 25px;
+    background-color: #808080;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /* MAIN SECTION */
