@@ -219,13 +219,28 @@ body{
 .album-name{
     color: #fff;
     font-size: 0.9rem;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
 }
 
 .album-artist{
     color: #6e6e6e;
     font-size: 0.7rem;
     font-weight: 600;
+}
+
+.for-you{
+    padding: 1rem;
+}
+
+.for-you .section-title{
+    padding-bottom: 1rem;
+}
+
+.for-you .section-subtitle{
+    color: #6e6e6e;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
 }
 
 /* COMMAND-BAR SECTION */
