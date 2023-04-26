@@ -6,22 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Spotify - Home</title>
 </head>
 <body>
     <div class="flex">
         <section class="side-bar flex">
-            <div class="wrapper flex">
-                <img class="logo-small" src="./assets/favicon.ico" alt="spotify main logo">
-                <img class="section-icon" src="./assets/home.svg" alt="home button logo">
-                <img class="section-icon" src="./assets/search.svg" alt="search button logo">
-                <img class="section-icon" src="./assets/libreria.svg" alt="your library button logo">
+            <div class="upper wrapper flex">
+                <img class="logo-small" src="./assets/favicon.ico" alt="spotify small logo">
+                <img class="logo-big hidden" src="./assets/logo.svg" alt="spotify main logo">
+                <ul class="menu">
+                    <li class="menu-item flex">
+                        <img class="menu-icon" src="./assets/home.svg" alt="home button logo">
+                        <p class="menu-name hidden">Home</p>
+                    </li>
+                    <li class="menu-item flex">
+                        <img class="menu-icon" src="./assets/search.svg" alt="search button logo">
+                        <p class="menu-name hidden">Cerca</p>
+                    </li>
+                    <li class="menu-item flex">
+                        <img class="menu-icon" src="./assets/libreria.svg" alt="your library button logo">
+                        <p class="menu-name hidden">La tua libreria</p>
+
+                    </li>
+                </ul>
+                <ul class="playlist hidden">
+                    <li class="heading">
+                        PLAYLIST
+                    </li>
+                    <li class="add-playlist flex">
+                        <div class="new-playlist">+</div>
+                        <p class="menu-name">Crea Playlist</p>
+                    </li>
+                    <li class="playlist-name">
+                        Nome Playlist
+                    </li>
+                    <li class="playlist-name">
+                        Nome Playlist
+                    </li>
+                    <li class="playlist-name">
+                        Nome Playlist
+                    </li>
+                    <li class="playlist-name">
+                        Nome Playlist
+                    </li>
+                    <li class="playlist-name">
+                        Nome Playlist
+                    </li>
+                    <li class="playlist-name">
+                        Nome Playlist
+                    </li>
+                    <li class="playlist-name">
+                        Nome Playlist
+                    </li>
+                </ul>
             </div>
-            <div class="wrapper flex">
-                <img class="download-btn" src="./assets/download.svg" alt="download button logo">
-                <div class="profile-btn">
-                    <img src="./assets/profile.svg" alt="profile button logo">
-                </div>
+            <div class="lower wrapper flex">
+                <section class="download flex">
+                    <img class="download-btn" src="./assets/download.svg" alt="download button logo">
+                    <p class="menu-name hidden">Installa App</p>
+                </section>
+                <section class="profile flex">
+                    <div class="profile-btn">
+                        <img src="./assets/profile.svg" alt="profile button logo">
+                    </div>
+                    <p class="profile-name menu-name hidden">John Doe</p>
+                </section>
             </div>
         </section>
         <main class="main">
