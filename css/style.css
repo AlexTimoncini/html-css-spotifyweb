@@ -194,6 +194,40 @@ body{
     background-color: transparent;
 }
 
+.recently-played{
+    padding: 0 1rem;
+}
+
+.section-title{
+    color:#fff;
+    padding-bottom: 2rem;
+}
+
+.album-wrapper{
+    gap: 1rem;
+}
+
+.album{
+    width: calc(100% / 2 - 1rem);
+    text-align: center;
+}
+
+.album-img{
+    width: 100%;
+}
+
+.album-name{
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+}
+
+.album-artist{
+    color: #6e6e6e;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
 /* COMMAND-BAR SECTION */
 .command-bar{
     height: 90px;
