@@ -68,7 +68,6 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 0.4rem 0;
-    
 }
 
 .menu-icon{
@@ -192,6 +191,10 @@ body{
     width: 25px;
     height: 2px;
     background-color: transparent;
+}
+
+.genre.active::after{
+    background-color: #adff2f;
 }
 
 .recently-played{
@@ -387,6 +390,9 @@ body{
         flex-direction: row;
     }
 
+    .menu-item.active{
+        border-left: 3px solid #adff2f;
+    }
     
     .side-bar .lower.wrapper{
         padding-left: 1.25rem;
