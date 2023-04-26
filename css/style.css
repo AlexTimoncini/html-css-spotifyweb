@@ -284,3 +284,17 @@ body{
         width: calc(100% - 230px);
     }
 }
+
+@media screen and (min-width: 878px){
+    /* MAIN SECTION */
+    .album{
+        width: calc((100% - 3rem) / 4)
+    }
+}
+
+@media screen and (min-width: 1440px){
+    /* MAIN SECTION */
+    .album{
+        width: calc((100% - 5rem) / 6)
+    }
+}
