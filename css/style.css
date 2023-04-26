@@ -68,6 +68,11 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 0.4rem 0;
+    transition: all 0.2s ease;
+}
+
+.menu-item:hover{
+    color: #fff;
 }
 
 .menu-icon{
@@ -95,6 +100,15 @@ body{
 .add-playlist{
     line-height: 35px;
     font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.add-playlist:hover{
+    color: #fff;
+}
+
+.add-playlist:hover .new-playlist{
+    background-color: #fff;
 }
 
 .new-playlist{
@@ -106,17 +120,28 @@ body{
     background-color: #a3a3a3;
     color: #000000;
     margin-right: 0.25rem;
+    transition: all 0.2s ease;
 }
 
 .playlist-name{
     font-weight: bold;
     padding-top: 1rem;
+    transition: all 0.2s ease;
+}
+
+.playlist-name:hover{
+    color: #fff;
 }
 
 .download{
     border-radius: 5%;
     width: 100%;
     justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.download:hover{
+    color: #fff;
 }
 
 .download-btn{
@@ -180,6 +205,11 @@ body{
     padding: 1.5rem 1rem;
     text-align: center;
     position: relative;
+    transition: 0.2s ease;
+}
+
+.genre:hover{
+    color: #fff;
 }
 
 .genre::after{
