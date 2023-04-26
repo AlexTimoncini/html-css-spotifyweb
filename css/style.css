@@ -232,15 +232,20 @@ body{
     padding: 1rem;
 }
 
-.for-you .section-title{
+.for-you .section-title,
+.popular-artists .section-title{
     padding-bottom: 1rem;
 }
 
-.for-you .section-subtitle{
+.section-subtitle{
     color: #6e6e6e;
     font-size: 0.8rem;
     font-weight: 600;
     padding-bottom: 2rem;
+}
+
+.popular-artists .album-img{
+    border-radius: 50%;
 }
 
 /* COMMAND-BAR SECTION */
