@@ -253,6 +253,108 @@ body{
 .command-bar{
     height: 90px;
     background-color: #282828;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+.song-commands{
+    height: 100%;
+    align-items: center;
+    color: #6e6e6e;
+    font-weight: 600;
+    flex-grow: 0;
+}
+
+.song-img{
+    height: 50%;
+}
+
+.song-img img{
+    height: 100%;
+}
+
+.song-info{
+    padding-left: 0.7rem;
+}
+
+.song-title{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.song-album,
+.song-artist{
+    color: #6e6e6e;
+    font-size: 0.7rem;
+}
+
+.likeAdd-box{
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.likeAdd-box i{
+    margin-bottom: 0.2rem;
+}
+
+.music-player{
+    height: 100%;
+    color: #fff;
+    flex-grow: 1;
+}
+
+.player-commands{
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.command{
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+
+.fa-circle-play{
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.song-time{
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.time-number{
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.line{
+    border-radius: 5px;
+    height: 4px;
+    width: 50%;
+    max-width: 400px;
+    background-color: #5a5a5a;
+    margin: 0 0.5rem;
+}
+
+.volume-screen-commands{
+    flex-grow: 0;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.volume-screen-commands i{
+    margin: 0 0.25rem;
+    font-size: 0.8rem;
+}
+
+.volume-screen-commands .line{
+    width: 100px;
 }
 
 /*--------------MEDIA QUERIES--------------*/
@@ -311,6 +413,17 @@ body{
     .album{
         width: calc((100% - 3rem) / 4)
     }
+
+    /* COMMAND-BAR SECTION */
+    .likeAdd-box{
+        flex-direction: row;
+    }
+
+    .likeAdd-box i{
+        margin-bottom: 0;
+        margin-right: 0.5rem;
+    }
+
 }
 
 @media screen and (min-width: 1440px){
