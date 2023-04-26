@@ -8,7 +8,30 @@ box-sizing: border-box;
 }
 
 /*--------------LAYOUT STYLE--------------*/
+.flex{
+    display: flex;
+}
 
 /*--------------SITE SECTION--------------*/
 
+/* SIDE-BAR SECTION */
+.side-bar{
+    width: 50px;
+    height: calc(100vh - 90px);
+    background-color: #000000;
+}
+
+/* MAIN SECTION */
+.main{
+    width: calc(100% - 50px);
+    height: calc(100vh - 90px);
+    background-color: #141922;
+    overflow-y: auto;
+}
+
+/* COMMAND-BAR SECTION */
+.command-bar{
+    height: 90px;
+    background-color: #282828;
+}
 /*--------------MEDIA QUERIES--------------*/
