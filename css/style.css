@@ -257,7 +257,6 @@ body{
     height: 90px;
     background-color: #282828;
     padding: 0.5rem;
-    justify-content: space-between;
 }
 
 .song-commands{
@@ -301,7 +300,6 @@ body{
 }
 
 .music-player{
-    height: 100%;
     color: #fff;
     flex-grow: 1;
 }
