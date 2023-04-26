@@ -217,6 +217,31 @@ body{
 
 .album-img{
     width: 100%;
+    position: relative;
+    transition: all 0.5s ease;
+    background-color: #000000;
+}
+
+.album-img img{
+    display: block;
+    width: 100%;
+}
+
+.album-img:hover img{
+    filter: opacity(0.6)
+    
+}
+
+.album-img:hover::after{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f144";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
 }
 
 .album-name{
@@ -249,6 +274,10 @@ body{
 }
 
 .popular-artists .album-img{
+    border-radius: 50%;
+}
+
+.popular-artists .album-img img{
     border-radius: 50%;
 }
 
