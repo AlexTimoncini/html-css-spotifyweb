@@ -11,6 +11,14 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.pointed{
+    cursor: pointer;
+}
+
+i{
+    cursor: pointer;
+}
+
 /*--------------LAYOUT STYLE--------------*/
 .flex{
     display: flex;
@@ -211,6 +219,7 @@ body{
     text-align: center;
     position: relative;
     transition: 0.2s ease;
+    cursor: pointer;
 }
 
 .genre:hover{
@@ -254,6 +263,7 @@ body{
     width: 100%;
     position: relative;
     background-color: #000000;
+    cursor: pointer;
 }
 
 .album-img img{
@@ -351,6 +361,7 @@ body{
 .song-artist{
     color: #6e6e6e;
     font-size: 0.7rem;
+    cursor: pointer;
 }
 
 .song-album:hover,
@@ -418,7 +429,7 @@ body{
     background-color: #5a5a5a;
     margin: 0 0.5rem;
     position: relative;
-    
+    cursor: pointer;
 }
 
 .line-played{
