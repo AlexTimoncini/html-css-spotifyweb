@@ -218,18 +218,17 @@ body{
 .album-img{
     width: 100%;
     position: relative;
-    transition: all 0.5s ease;
     background-color: #000000;
 }
 
 .album-img img{
     display: block;
     width: 100%;
+    transition: all 0.5s ease;
 }
 
 .album-img:hover img{
     filter: opacity(0.6)
-    
 }
 
 .album-img:hover::after{
