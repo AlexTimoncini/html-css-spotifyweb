@@ -20,6 +20,10 @@ body{
     display: none;
 }
 
+.flex.wrap{
+    flex-wrap: wrap;
+}
+
 /*--------------SITE SECTION--------------*/
 
 /* SIDE-BAR SECTION */
@@ -163,6 +167,31 @@ body{
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+.genres{
+    width: 100%;
+    justify-content: center;
+}
+
+.genre{
+    color:#6e6e6e;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.genre::after{
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 25px;
+    height: 2px;
+    background-color: transparent;
 }
 
 /* COMMAND-BAR SECTION */
