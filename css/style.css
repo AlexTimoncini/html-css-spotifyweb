@@ -135,13 +135,16 @@ input[type="checkbox"]{
     transition: all 0.2s ease;
 }
 
-.playlist-name{
+.playlist-name a{
+    display: inline-block;
     font-weight: bold;
     padding-top: 1rem;
     transition: all 0.2s ease;
+    color: #6e6e6e;
+    text-decoration: none;
 }
 
-.playlist-name:hover{
+.playlist-name a:hover{
     color: #fff;
 }
 
@@ -421,12 +424,9 @@ input[type="checkbox"]{
     border-width: 0px 0 0px 26px;
 }
 
-
-
 .fa-circle-play:hover{
     transform: scale(1.1);
 }
-
 
 .song-time{
     height: 50%;
