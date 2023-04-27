@@ -423,7 +423,7 @@ input[type="checkbox"]{
     cursor: pointer;
 }
 
-.playpause input[type="checkbox"]:checked ~ label{
+.playpause #playpause[type="checkbox"]:checked ~ label{
     border-style: double;
     border-width: 0px 0 0px 26px;
 }

@@ -19,6 +19,8 @@ box-sizing: border-box;
     height: auto;
     font-weight: bold;
     background-color: transparent;
+    position: fixed;
+    width: calc(100vw - 50px);
 }
 
 .back-btn{
@@ -87,6 +89,7 @@ i.fa-caret-down{
     font-weight: bold;
     padding: 2rem 1rem;
     align-items: flex-end;
+    padding-top: 90px;
 }
 
 .playlist-img{
@@ -138,12 +141,58 @@ i.fa-circle{
 }
 
 /* PLAYLIST BODY SECTION */
-
 .playlist-body{
-    height: 100vw;
+    height: 100%;
     background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(36,74,64,1) 100%);
+    padding: 2rem 1rem;
+    overflow-x: hidden;
 }
 
+.playlist-commands{
+    justify-content: space-between;
+    color:#bebebe;
+    font-size: 1.5rem;
+}
+
+.playlist-body .playpause{
+    position: relative;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: #1ed760;
+}
+
+.playlist-body .playpause label{
+    border-color: transparent transparent transparent #000;
+    position: absolute;
+    top: 50%;
+    transform: translate(-6px, -50%);
+}
+
+
+.playpause #playpause-playlist[type="checkbox"]:checked ~ label{
+    border-style: double;
+    border-width: 0px 0 0px 26px;
+}
+
+.playlist-player i{
+    padding-left:1rem;
+}
+
+.search-bar i{
+    padding: 0 1rem;
+}
+
+.search-bar input{
+    background-color: transparent;
+    border: none;
+    width: 200px;
+    font-size: 0.8rem;
+    color:#bebebe;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
 
 
 
@@ -151,6 +200,10 @@ i.fa-circle{
 /*--------------MEDIA QUERIES--------------*/
 @media screen and (min-width: 639px){
     /* UPGRADE/PROFILE SECTION */
+    .upgrade-banner{
+    width: calc(100vw - 230px);
+    }
+
     .upgrade-btn{
         display: inline-block;
     }
@@ -168,7 +221,7 @@ i.fa-circle{
 
 @media screen and (min-width: 1440px){
     .playlist-title{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .playlist-img{
         width: 250px;

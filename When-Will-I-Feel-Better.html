@@ -117,7 +117,34 @@
                         </aside>
                 </div>
             </header>
-            <div class="playlist-body"></div>
+            <div class="playlist-body">
+                <section class="playlist-commands flex">
+                    <div class="playlist-player flex center-Y">
+                        <div class="playpause">
+                            <input type="checkbox" id="playpause-playlist" name="check"/>
+                            <label for="playpause-playlist"></label>
+                        </div>
+                        <i class="fa-regular fa-circle-down"></i>
+                        <i class="fa-solid fa-user-plus"></i>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="search-bar flex center-Y">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input list="orders" name="orders" id="order" placeholder="Ordinamento personalizzato">
+                        <datalist id="orders" value="Ordina per">
+                            <option value="Ordinamento personalizzato">
+                            <option value="Titolo">
+                            <option value="Artista">
+                            <option value="Album">
+                            <option value="Aggiunto il giorno">
+                                <option value="Durata">
+                        </datalist>
+                        <label for="order">
+                            <i class="fa-solid fa-caret-down fa-2xs"></i>
+                        </label>                    
+                    </div>
+                </section>
+            </div>
         </main>
     </div>
     <section class="command-bar flex">
@@ -142,7 +169,7 @@
                 <div class="playpause">
                     <input type="checkbox" id="playpause" name="check"/>
                     <label for="playpause"></label>
-                </div>                
+                </div>              
                 <i class="command fa-solid fa-forward-step"></i>
                 <i class="command fa-solid fa-rotate-right"></i>
             </div>
