@@ -256,6 +256,10 @@ i.fa-circle{
     text-align: center;
 }
 
+.playlist td:nth-child(3),
+.playlist td:nth-child(4){
+    display: none;
+}
 
 
 
@@ -278,6 +282,11 @@ i.fa-circle{
 @media screen and (min-width: 878px){
     .playlist-title{
         font-size: 3rem;
+    }
+    
+    .playlist td:nth-child(3),
+    .playlist td:nth-child(4){
+        display: table-cell;
     }
 }
 
