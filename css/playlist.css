@@ -12,10 +12,22 @@ box-sizing: border-box;
 /* UPGRADE/PROFILE SECTION */
 
 .upgrade-banner{
-    justify-content: end;
+    justify-content: space-between;
     height: auto;
     background-color: #5bb7a0;
     font-weight: bold;
+}
+
+.back-btn{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .upgrade-btn{
@@ -65,6 +77,7 @@ i.fa-caret-down{
     padding-right: 0.2rem;
     display: none;
 }
+
 
 
 
