@@ -1,0 +1,87 @@
+/*--------------GENERAL STYLE--------------*/
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*--------------SITE SECTION--------------*/
+
+/* UPGRADE/PROFILE SECTION */
+
+.upgrade-banner{
+    justify-content: end;
+    height: auto;
+    background-color: #5bb7a0;
+    font-weight: bold;
+}
+
+.upgrade-btn{
+    color: #fff;
+    border: 1px solid #6e6e6e;
+    text-transform: none;
+    font-size: 0.7rem;
+    padding: 0.5rem 1.5rem;
+    display: none;
+}
+
+.upgrade-btn:hover{
+    transform: scale(1.1);
+    border: 1px solid #fff;
+}
+
+.profile-menu{
+    font-size: 0.7rem;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    border: 1px solid transparent;
+    padding: 0.1rem;
+}
+
+.profile-picture{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-position: center;
+}
+
+.profile-picture img{
+    height: 100%;
+    display: block;    
+}
+
+.upgrade-banner .profile-name{
+    padding: 0.4rem 0.3rem;
+}
+
+i.fa-caret-down{
+    padding-right: 0.2rem;
+    display: none;
+}
+
+
+
+/*--------------MEDIA QUERIES--------------*/
+@media screen and (min-width: 639px){
+    /* UPGRADE/PROFILE SECTION */
+    .upgrade-btn{
+        display: inline-block;
+    }
+    i.fa-caret-down{
+        padding-right: 0.2rem;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 878px){
+}
+
+@media screen and (min-width: 1440px){
+}
