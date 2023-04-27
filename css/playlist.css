@@ -206,6 +206,21 @@ i.fa-circle{
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.playlist tbody tr:hover .song-order::after{
+    content: "\25b2";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.playlist tbody tr:hover .song-order{
+    color: transparent;
+}
+
 .playlist thead td{
     border-bottom: 1px solid #727a7d;
     font-weight: bold;
@@ -222,6 +237,7 @@ i.fa-circle{
     color: #b8c1bf;
     font-weight: 600;
     padding: 0 0.5rem;
+    position: relative;
 }
 
 .playlist .song-info{
