@@ -19,6 +19,10 @@ i{
     cursor: pointer;
 }
 
+input[type="checkbox"]{
+    display: none;
+}
+
 /*--------------LAYOUT STYLE--------------*/
 .flex{
     display: flex;
@@ -399,10 +403,25 @@ i{
     padding: 0 0.5rem;
 }
 
-.fa-circle-play{
-    font-size: 2rem;
-    padding: 0 1rem;
+.playpause label{
+    position: relative;
+    border-width: 13px 0 13px 26px;
+    border-style: solid;
+    margin: 0 1.5rem;
+    display: block;
+    width: 0;
+    height: 26px;
+    border-color: transparent transparent transparent #fff;
+    transition: 100ms all ease;
+    cursor: pointer;
 }
+
+.playpause input[type="checkbox"]:checked ~ label{
+    border-style: double;
+    border-width: 0px 0 0px 26px;
+}
+
+
 
 .fa-circle-play:hover{
     transform: scale(1.1);
