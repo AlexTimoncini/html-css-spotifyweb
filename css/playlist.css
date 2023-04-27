@@ -249,6 +249,7 @@ i.fa-circle{
 .playlist .song-info .song-img{
     width: 50px;
     height: 50px;
+    flex-shrink: 0;
 }
 
 .playlist .song-info img{
@@ -259,11 +260,13 @@ i.fa-circle{
 
 .playlist .song-info .text-wrapper{
     padding-left: 1rem;
+
 }
 
 .playlist .song-title{
     font-weight: 600;
     padding-bottom: 0.2rem;
+
 }
 
 .playlist .song-data,
