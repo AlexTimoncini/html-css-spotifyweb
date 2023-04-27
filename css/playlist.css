@@ -9,13 +9,16 @@ box-sizing: border-box;
 
 /*--------------SITE SECTION--------------*/
 
-/* UPGRADE/PROFILE SECTION */
+.header{
+    background-color: #5bb7a0;
+}
 
+/* UPGRADE/PROFILE SECTION */
 .upgrade-banner{
     justify-content: space-between;
     height: auto;
-    background-color: #5bb7a0;
     font-weight: bold;
+    background-color: transparent;
 }
 
 .back-btn{
@@ -78,6 +81,62 @@ i.fa-caret-down{
     display: none;
 }
 
+/* PLAYLIST HEADING SECTION */
+.playlist-heading{
+    color: #fff;
+    font-weight: bold;
+    padding: 2rem 1rem;
+    align-items: flex-end;
+}
+
+.playlist-img{
+    width: 200px;
+    aspect-ratio: 1/ 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.playlist-img img{
+    width: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.playlist-info{
+    padding-left: 1.5rem;
+    justify-content: end;
+    flex-direction: column;
+    width: 70%;
+}
+
+.playlist-privacy{
+    font-size: 0.8rem;
+}
+
+.playlist-title{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.playlist-heading .profile-name{
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+}
+
+i.fa-circle{
+    font-size: 0.4rem;
+}
+
+.song-counter{
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.playlist-time{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 
 
 
@@ -94,7 +153,16 @@ i.fa-caret-down{
 }
 
 @media screen and (min-width: 878px){
+    .playlist-title{
+        font-size: 3rem;
+    }
 }
 
 @media screen and (min-width: 1440px){
+    .playlist-title{
+        font-size: 5rem;
+    }
+    .playlist-img{
+        width: 250px;
+    }
 }

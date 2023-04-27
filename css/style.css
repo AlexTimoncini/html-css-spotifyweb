@@ -36,6 +36,10 @@ input[type="checkbox"]{
     flex-wrap: wrap;
 }
 
+.flex.center-Y{
+    align-items: center;
+}
+
 /*--------------SITE SECTION--------------*/
 
 /* SIDE-BAR SECTION */
