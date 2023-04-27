@@ -10,7 +10,7 @@ box-sizing: border-box;
 /*--------------SITE SECTION--------------*/
 
 .header{
-    background-color: #5bb7a0;
+    background: linear-gradient(0deg, rgba(45,92,80,1) 0%, rgba(91,184,161,1) 100%);
 }
 
 /* UPGRADE/PROFILE SECTION */
@@ -136,6 +136,14 @@ i.fa-circle{
     font-weight: 600;
     color: rgba(255, 255, 255, 0.7);
 }
+
+/* PLAYLIST BODY SECTION */
+
+.playlist-body{
+    height: 100vw;
+    background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(36,74,64,1) 100%);
+}
+
 
 
 
