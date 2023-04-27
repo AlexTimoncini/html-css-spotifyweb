@@ -172,7 +172,6 @@ i.fa-circle{
     transform: translate(-6px, -50%);
 }
 
-
 .playpause #playpause-playlist[type="checkbox"]:checked ~ label{
     border-style: double;
     border-width: 0px 0 0px 26px;
@@ -203,7 +202,7 @@ i.fa-circle{
     color: #b1b1b1;
 }
 
-.playlist tr:hover{
+.playlist tbody tr:hover{
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -260,8 +259,6 @@ i.fa-circle{
 .playlist td:nth-child(4){
     display: none;
 }
-
-
 
 /*--------------MEDIA QUERIES--------------*/
 @media screen and (min-width: 639px){

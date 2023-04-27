@@ -76,7 +76,6 @@ input[type="checkbox"]{
 
 .menu{
     width: 100%;
-
 }
 
 .menu-item{
@@ -87,7 +86,13 @@ input[type="checkbox"]{
     transition: all 0.2s ease;
 }
 
-.menu-item:hover{
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    color: #6e6e6e;
+}
+
+.menu-item a:hover{
     color: #fff;
 }
 
