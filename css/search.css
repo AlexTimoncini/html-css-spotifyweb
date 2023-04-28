@@ -18,11 +18,13 @@ box-sizing: border-box;
 }
 
 .header{
-    background: none;
-
+    background: #121212;
 }
 
 /* UPGRADE/PROFILE SECTION */
+.upgrade-banner{
+    background-color: #121212
+}
 
 .upgrade-banner nav{
     width: 50%;
@@ -41,7 +43,7 @@ box-sizing: border-box;
     color: #121212;
     padding-left: 1rem;
     width: 80%;
-    min-width: 150px;
+    min-width: 100px;
 }
 
 .search-bar-box img{
@@ -49,12 +51,121 @@ box-sizing: border-box;
     cursor: pointer;
 }
 
+/* BROWSING-HISTORY SECTION */
+.browsing-history{
+    padding: 5rem 2rem 0;
+}
+
+.browsing-history .title{
+    justify-content: space-between;
+}
+
+.browsing-history .section-title{
+    padding: 2rem 0;
+}
+
+.show-more{
+    text-decoration: none;
+    color: #636363;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.card-row{
+    overflow: hidden;
+    gap: 2rem;
+}
+
+.card{
+    width: calc((100% - 2rem) / 2);
+    padding: 1rem 1rem 2rem 1rem;
+    background-color: #181818;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.card:nth-child(3){
+    display: none;
+}
+.card:nth-child(4){
+    display: none;
+}
+.card:nth-child(5){
+    display: none;
+}
+.card:nth-child(6){
+    display: none;
+}
+.card:nth-child(7){
+    display: none;
+}
+
+.img-box-singer{
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.img-box-singer img{
+    width: 100%;
+    display: block;
+}
+
+.card-name{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card-type{
+    font-size: 0.9rem;
+    color: #636363;
+    font-weight: 600;
+}
+
+.close-card{
+    border: none;
+    height: 25px;
+    width: 25px;
+    background-color: #121212;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
 /*--------------MEDIA QUERIES--------------*/
-@media screen and (min-width: 639px){
+@media screen and (min-width: 800px){
+    .card:nth-child(3){
+        display: block;
+    }
 }
 
-@media screen and (min-width: 878px){
+@media screen and (min-width: 1000px){
+    .card:nth-child(4){
+        display: block;
+    }
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1200px){
+    .card:nth-child(5){
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .card:nth-child(6){
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .card:nth-child(7){
+        display: block;
+    }
 }
