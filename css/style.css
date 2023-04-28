@@ -193,14 +193,19 @@ input[type="checkbox"]{
     padding-bottom: 1rem;
 }
 
-.profile-btn{
+.profile-picture{
     width: 25px;
     height: 25px;
-    background-color: #808080;
-    object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
+    object-position: center;
 }
+
+.profile-picture img{
+    height: 100%;
+    display: block;    
+}
+
 
 .profile-name{
     color:#fff;

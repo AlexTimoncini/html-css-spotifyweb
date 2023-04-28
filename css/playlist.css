@@ -68,19 +68,6 @@ box-sizing: border-box;
     padding: 0.1rem;
 }
 
-.profile-picture{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    overflow: hidden;
-    object-position: center;
-}
-
-.profile-picture img{
-    height: 100%;
-    display: block;    
-}
-
 .upgrade-banner .profile-name{
     padding: 0.4rem 0.3rem;
 }
