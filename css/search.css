@@ -114,7 +114,14 @@ box-sizing: border-box;
     position: relative;
 }
 
-.img-box-singer img{
+.img-box-album{
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.browsing-history .card img{
     width: 100%;
     display: block;
 }
