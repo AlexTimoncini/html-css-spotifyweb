@@ -65,7 +65,10 @@ p.relevants{
     width: 100%;
     background: linear-gradient(135deg, rgba(70,13,244,1) 0%, rgba(130,130,209,1) 100%);
     color: #fff;
-    padding: 2rem;
+    padding: 4rem 2rem 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .my-playlists .favourite.card h1{
@@ -75,6 +78,19 @@ p.relevants{
 .my-playlists .card{
     width: calc((100% - 1rem) / 2);
     display: block;
+}
+
+.my-playlists .card a{
+    text-decoration: none;
+}
+
+.my-playlists .playlist-img{
+    width: 100%;
+    box-shadow: none;
+}
+
+.my-playlists .playlist-img img{
+    width: 50%;
 }
 
 /*--------------MEDIA QUERIES--------------*/
