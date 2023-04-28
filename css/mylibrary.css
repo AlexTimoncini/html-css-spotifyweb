@@ -1,0 +1,144 @@
+/*--------------GENERAL STYLE--------------*/
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*--------------SITE SECTION--------------*/
+.my-library-menu{
+    color: #fff;
+    list-style-type: none;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+}
+
+.my-library-menu li{
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.my-library-menu li.active{
+    background-color: rgba(255, 255, 255, 0.3);
+    display: block;
+}
+
+.upgrade-btn{
+    display: none;
+}
+
+p.relevants{
+    gap: 1rem;
+}
+
+.relevants i.fa-caret-down{
+    padding-left: 0.5rem;
+    display: block;
+}
+
+.my-playlists{
+    padding: 5rem 1rem 0;
+}
+
+.my-playlists .title{
+    justify-content: space-between;
+}
+
+.my-playlists .section-title{
+    padding: 2rem 0;
+}
+
+.my-playlists .card:hover{
+    background-color: #242323;
+}
+
+.my-playlists .card img{
+    width: 100%;
+    display: block;
+}
+
+.my-playlists .favourite.card{
+    width: 100%;
+    background: linear-gradient(135deg, rgba(70,13,244,1) 0%, rgba(130,130,209,1) 100%);
+    color: #fff;
+    padding: 2rem;
+}
+
+.my-playlists .favourite.card h1{
+    padding-top: 2rem;
+}
+
+.my-playlists .card{
+    width: calc((100% - 1rem) / 2);
+    display: block;
+}
+
+/*--------------MEDIA QUERIES--------------*/
+@media screen and (min-width: 800px){
+    .my-playlists .favourite.card{
+        width: calc(((100% - 2rem) / 3) * 2 + 1rem);
+    }
+
+    .my-playlists .card{
+        width: calc((100% - 2rem) / 3);
+    }
+}
+
+@media screen and (min-width: 878px){
+    i.fa-caret-down{
+        padding-right: 0.2rem;
+        display: block;
+    }
+
+    .my-library-menu{
+        display: flex;
+    }
+
+    .my-library-menu li{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .my-playlists .favourite.card{
+        width: calc(((100% - 3rem) / 4) * 2 + 1rem);
+    }
+
+    .my-playlists .card{
+        width: calc((100% - 3rem) / 4);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .my-playlists .favourite.card{
+        width: calc(((100% - 4rem) / 5) * 2 + 1rem);
+    }
+
+    .my-playlists .card{
+        width: calc((100% - 4rem) / 5);
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .my-playlists .favourite.card{
+        width: calc(((100% - 5rem) / 6) * 2 + 1rem);
+    }
+
+    .my-playlists .card{
+        width: calc((100% - 5rem) / 6);
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .my-playlists .favourite.card{
+        width: calc(((100% - 6rem) / 7) * 2 + 1rem);
+    }
+
+    .my-playlists .card{
+        width: calc((100% - 6rem) / 7);
+    }
+}

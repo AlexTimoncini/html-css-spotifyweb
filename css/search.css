@@ -374,7 +374,7 @@ box-sizing: border-box;
 
 /*--------------MEDIA QUERIES--------------*/
 @media screen and (min-width: 800px){
-    .card:nth-child(3){
+    .browsing-history .card:nth-child(3){
         display: block;
     }
 
@@ -384,7 +384,7 @@ box-sizing: border-box;
 }
 
 @media screen and (min-width: 1000px){
-    .card:nth-child(4){
+    .browsing-history .card:nth-child(4){
         display: block;
     }
 
@@ -394,7 +394,7 @@ box-sizing: border-box;
 }
 
 @media screen and (min-width: 1200px){
-    .card:nth-child(5){
+    .browsing-history .card:nth-child(5){
         display: block;
     }
 
@@ -404,7 +404,7 @@ box-sizing: border-box;
 }
 
 @media screen and (min-width: 1400px){
-    .card:nth-child(6){
+    .browsing-history .card:nth-child(6){
         display: block;
     }
 
@@ -414,7 +414,7 @@ box-sizing: border-box;
 }
 
 @media screen and (min-width: 1600px){
-    .card:nth-child(7){
+    .browsing-history .card:nth-child(7){
         display: block;
     }
 
