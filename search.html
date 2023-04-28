@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/playlist.css">
+    <link rel="stylesheet" href="./css/search.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Spotify - Home</title>
+    <title>Spotify - Cerca</title>
 </head>
 <body>
     <div class="flex">
@@ -18,13 +20,13 @@
                 <img class="logo-small" src="./assets/favicon.ico" alt="spotify small logo">
                 <img class="logo-big hidden" src="./assets/logo.svg" alt="spotify main logo">
                 <ul class="menu">
-                    <li class="menu-item flex pointed active">
+                    <li class="menu-item flex pointed">
                         <img class="menu-icon" src="./assets/home.svg" alt="home button logo">
                         <a href="index.html">
                             <p class="menu-name hidden">Home</p>
                         </a>
                     </li>
-                    <li class="menu-item flex pointed">
+                    <li class="menu-item flex active pointed">
                         <img class="menu-icon" src="./assets/search.svg" alt="search button logo">
                         <a href="search.html">
                         <p class="menu-name hidden">Cerca</p>
@@ -92,101 +94,46 @@
             </div>
         </section>
         <main class="main">
-            <div class="upgrade-banner">
-                <button class="upgrade-btn pointed">Effetttua l'upgrade</button>
-            </div>
-            <div class="genres flex wrap">
-                <h2 class="genre active">In evidenza</h2>
-                <h2 class="genre">Podcast</h2>
-                <h2 class="genre">Classifiche</h2>
-                <h2 class="genre">Generi e mood</h2>
-                <h2 class="genre">Nuove uscite</h2>
-                <h2 class="genre">Scopri</h2>
-            </div>
-            <section class="recently-played">
-                <h1 class="section-title">Recently played</h1>
-                <div class="album-wrapper flex wrap">
-                    <figure class="album">
-                        <div class="album-img">
-                            <img src="./assets/metal_lifting.jpg" alt="heavy metal playlist img">
+            <header class="header">
+                <div class="upgrade-banner flex">
+                    <a href="index.html" class="back-btn flex">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <div class="flex">
+                        <button class="upgrade-btn pointed">Effetttua l'upgrade</button>
+                        <div class="profile-menu flex">
+                            <div class="profile-picture">
+                                <img src="./assets/playlist-assets/profile-picture.jpg" alt="profile picture">
+                            </div>
+                            <p class="profile-name hidden">Kurowashi</p>
+                            <i class="fa-solid fa-caret-down"></i>
                         </div>
-                        <h2 class="album-name">Heavy Metal</h2>
-                        <h3 class="album-artist">Subtitle</h3>
-                    </figure>
-                    <figure class="album">
-                        
-                        <div class="album-img">
-                            <img src="./assets/stranger.jpeg" alt="stranger things playlist img">
-                        </div>
-                        <h2 class="album-name">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h2>
-                        <h3 class="album-artist">Kyle Dixon & Michael Stein</h3>
-                    </figure>
-                    <figure class="album">
-                        <div class="album-img">
-                            <img src="./assets/aquietplace.jpeg" alt="a quiet place playlist img">
-                        </div>
-                        <h2 class="album-name">A quiet place</h2>
-                        <h3 class="album-artist">Subtitle</h3>
-                    </figure>
-                    <figure class="album">
-                        <div class="album-img">
-                            <img src="./assets/split.jpeg" alt="split playlist img">
-                        </div>
-                        <h2 class="album-name">Split</h2>
-                        <h3 class="album-artist">Subtitle</h3>
-                    </figure>
-                    <figure class="album">
-                        <div class="album-img">
-                            <img src="./assets/cure.jpeg" alt="a cure for wellness playlist img">
-                        </div>
-                        <h2 class="album-name">A cure for wellness</h2>
-                        <h3 class="album-artist">Subtitle</h3>
-                    </figure>
-                    <figure class="album">
-                        <div class="album-img">
-                            <img src="./assets/sinister.jpeg" alt="sinister playlist img">
-                        </div>
-                        <h2 class="album-name">Sinister</h2>
-                        <h3 class="album-artist">Subtitle</h3>
-                    </figure>
+                    </div>
                 </div>
-            </section>
-            <section class="for-you">
-                <h1 class="section-title">Creato per John Doe</h1>
-                <p class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
-                <div class="album-wrapper flex wrap">
-                    <figure class="album">
-                        <div class="album-img">
-                            <img src="./assets/radar.jpeg" alt="release radar playlist img">
+                <div class="playlist-heading flex">
+                        <div class="playlist-img flex wrap">
+                            <img src="./assets/playlist-assets/joji-SMITHEREENS.png" alt="joji smithereens album cover">
+                            <img src="./assets/playlist-assets/kill-bill.png" alt="SOS album cover">
+                            <img src="./assets/playlist-assets/jvke-album.png" alt="joji album cover">
+                            <img src="./assets/playlist-assets/pony.png" alt="pony album cover">
                         </div>
-                        <h2 class="album-name">Release Radar</h2>
-                    </figure>
-                    <figure class="album">
-                        <div class="album-img">
-                            <img src="./assets/mixdaily.jpeg" alt="split playlist img">
-                        </div>
-                        <h2 class="album-name">Daily Mix 1</h2>
-                    </figure>
+                        <aside class="playlist-info flex">
+                            <p class="playlist-privacy">Playlist pubblica</p>
+                            <p class="playlist-title">When Will I Feel Better?</p>
+                            <div class="flex center-Y wrap">
+                                <div class="profile-picture">
+                                    <img src="./assets/playlist-assets/profile-picture.jpg" alt="profile picture">
+                                </div>
+                                <p class="profile-name">Kurowashi</p>
+                                <i class="fa-solid fa-circle"></i>
+                                <p>
+                                    <span class="song-counter">29 brani,</span>
+                                    <span class="playlist-time">1 ora 43 min</span>
+                                </p>
+                            </div>
+                        </aside>
                 </div>
-            </section>
-            <section class="popular-artists">
-                <h1 class="section-title">Artisti più popolari</h1>
-                <p class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
-                <div class="album-wrapper flex wrap">
-                    <figure class="album">
-                        <div class="album-img">
-                            <img src="./assets/youg.jpeg" alt="Lana del Rey profile img">
-                        </div>
-                        <h2 class="album-name">Lana del Rey</h2>
-                    </figure>
-                    <figure class="album">
-                        <div class="album-img">
-                            <img src="./assets/einaudi.jpeg" alt="Einaudi profile img">
-                        </div>
-                        <h2 class="album-name">Ludovico Einaudi</h2>
-                    </figure>
-                </div>
-            </section>
+            </header>
 
         </main>
     </div>
@@ -212,7 +159,7 @@
                 <div class="playpause">
                     <input type="checkbox" id="playpause" name="check"/>
                     <label for="playpause"></label>
-                </div>                
+                </div>              
                 <i class="command fa-solid fa-forward-step"></i>
                 <i class="command fa-solid fa-rotate-right"></i>
             </div>
