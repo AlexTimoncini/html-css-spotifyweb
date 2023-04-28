@@ -83,6 +83,11 @@ box-sizing: border-box;
     background-color: #181818;
     border-radius: 1rem;
     position: relative;
+    cursor: pointer;
+}
+
+.browsing-history .card:hover{
+    background-color: #242323;
 }
 
 .card:nth-child(3){
@@ -106,6 +111,7 @@ box-sizing: border-box;
     border-radius: 50%;
     overflow: hidden;
     width: 100%;
+    position: relative;
 }
 
 .img-box-singer img{
@@ -153,7 +159,6 @@ box-sizing: border-box;
     width: calc((100% - 1rem) / 2);
     overflow: hidden;
     aspect-ratio: 1 / 1;
-    cursor: pointer;
 }
 
 .genres-grid .genre-img{
