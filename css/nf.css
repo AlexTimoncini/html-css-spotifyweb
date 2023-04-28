@@ -1,0 +1,25 @@
+/*--------------GENERAL STYLE--------------*/
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*--------------SITE SECTION--------------*/
+
+.header{
+    background: linear-gradient(0deg, rgb(61, 75, 71) 0%, rgb(112, 131, 126)100%);
+}
+
+.upgrade-banner{
+    background-color: rgb(112, 131, 126, 0.1);
+}
+
+.playlist-body{
+    background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(18,18,18,1) 50%, rgb(69, 85, 81) 100%);
+    padding: 2rem 1rem;
+    overflow-x: hidden;
+}
+

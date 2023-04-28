@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/playlist.css">
+    <link rel="stylesheet" href="./css/nf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Spotify - When Will I Feel Better?-MyPlaylist</title>
+</head>
+<body>
+    <div class="flex">
+        <section class="side-bar flex">
+            <div class="upper wrapper flex">
+                <img class="logo-small" src="./assets/favicon.ico" alt="spotify small logo">
+                <img class="logo-big hidden" src="./assets/logo.svg" alt="spotify main logo">
+                <ul class="menu">
+                    <li class="menu-item flex pointed">
+                        <img class="menu-icon" src="./assets/home.svg" alt="home button logo">
+                        <a href="index.html">
+                            <p class="menu-name hidden">Home</p>
+                        </a>
+                    </li>
+                    <li class="menu-item flex pointed">
+                        <img class="menu-icon" src="./assets/search.svg" alt="search button logo">
+                        <a href="search.html">
+                        <p class="menu-name hidden">Cerca</p>
+                        </a>
+                    </li>
+                    <li class="menu-item flex pointed">
+                        <img class="menu-icon" src="./assets/libreria.svg" alt="your library button logo">
+                        <a href="#">
+                        <p class="menu-name hidden">La tua libreria</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="playlist hidden">
+                    <li class="heading">
+                        PLAYLIST
+                    </li>
+                    <li class="add-playlist flex pointed">
+                        <div class="new-playlist">+</div>
+                        <p class="menu-name">Crea Playlist</p>
+                    </li>
+                    <li>
+                        <ul class="playlist-list">                            
+                            <li class="playlist-name active">
+                                <a href="nf.html">Nf</a>
+                            </li>
+                            <li class="playlist-name">
+                                <a href="When-Will-I-Feel-Better.html">When Will I Feel Better?</a>
+                            </li>
+                            <li class="playlist-name">
+                                <a href="#">Girls</a>
+                            </li>
+                            <li class="playlist-name">
+                                <a href="#">I don't Belong Here</a>
+                            </li>
+                            <li class="playlist-name">
+                                <a href="#">Vvvv</a>
+                            </li>
+                            <li class="playlist-name">
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li class="playlist-name">
+                                <a href="#">Down</a>
+                            </li>
+                            <li class="playlist-name">
+                                <a href="#">truth</a>
+                            </li>
+                    </li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="lower wrapper flex">
+                <section class="download flex pointed">
+                    <img class="download-btn" src="./assets/download.svg" alt="download button logo">
+                    <p class="menu-name hidden">Installa App</p>
+                </section>
+                <section class="profile flex pointed">
+                    <div class="profile-picture">
+                        <img src="./assets/playlist-assets/profile-picture.jpg" alt="profile picture">
+                    </div>
+                    <p class="profile-name menu-name hidden">Kurowashi</p>
+                </section>
+                <div class="song-played-img hidden">
+                    <img src="./assets/sinister.jpeg" alt="sinister album cover">
+                </div>
+            </div>
+        </section>
+        <main class="main">
+            <header class="header">
+                <div class="upgrade-banner flex">
+                    <a href="index.html" class="back-btn flex">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <div class="flex">
+                        <button class="upgrade-btn pointed">Effetttua l'upgrade</button>
+                        <div class="profile-menu flex">
+                            <div class="profile-picture">
+                                <img src="./assets/playlist-assets/profile-picture.jpg" alt="profile picture">
+                            </div>
+                            <p class="profile-name hidden">Kurowashi</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-heading flex">
+                        <div class="playlist-img flex wrap">
+                            <img src="./assets/nf-playlist-assets/therapy-session.jpg" alt="Therapy Session album cover">
+                            <img src="./assets/nf-playlist-assets/hope.jpg" alt="HOPE album cover">
+                            <img src="./assets/nf-playlist-assets/hope.jpg" alt="HOPE album cover">
+                            <img src="./assets/nf-playlist-assets/clouds.jpg" alt="CLOUDS album cover">
+                        </div>
+                        <aside class="playlist-info flex">
+                            <p class="playlist-privacy">Playlist pubblica</p>
+                            <p class="playlist-title">Nf</p>
+                            <div class="flex center-Y wrap">
+                                <div class="profile-picture">
+                                    <img src="./assets/playlist-assets/profile-picture.jpg" alt="profile picture">
+                                </div>
+                                <p class="profile-name">Kurowashi</p>
+                                <i class="fa-solid fa-circle"></i>
+                                <p>
+                                    <span class="song-counter">7 brani,</span>
+                                    <span class="playlist-time">29 min 13sec.</span>
+                                </p>
+                            </div>
+                        </aside>
+                </div>
+            </header>
+            <div class="playlist-body">
+                <section class="playlist-commands flex">
+                    <div class="playlist-player flex center-Y">
+                        <div class="playpause">
+                            <input type="checkbox" id="playpause-playlist" name="check"/>
+                            <label for="playpause-playlist"></label>
+                        </div>
+                        <i class="fa-regular fa-circle-down"></i>
+                        <i class="fa-solid fa-user-plus"></i>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="search-bar flex center-Y">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input list="orders" name="orders" id="order" placeholder="Ordinamento personalizzato">
+                        <datalist id="orders" value="Ordina per">
+                            <option value="Ordinamento personalizzato">
+                            <option value="Titolo">
+                            <option value="Artista">
+                            <option value="Album">
+                            <option value="Aggiunto il giorno">
+                                <option value="Durata">
+                        </datalist>
+                        <label for="order">
+                            <i class="fa-solid fa-caret-down fa-2xs"></i>
+                        </label>                    
+                    </div>
+                </section>
+                <section class="playlist flex">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="text-center">#</td>
+                                <td>Titolo</td>
+                                <td>Album</td>
+                                <td>Aggiunto il giorno</td>
+                                <td class="text-center"><i class="fa-regular fa-clock"></i></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="song-order">1</td>
+                                <td class="song-info flex">
+                                    <div class="song-img">
+                                        <img src="./assets/nf-playlist-assets/therapy-session.jpg" alt="therapy session album cover">
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <p class="song-title">Therapy Session</p>
+                                        <p class="singer-name">NF</p>
+                                    </div>
+                                </td>
+                                <td class="album-title">
+                                    Therapy Session
+                                </td>
+                                <td class="song-date">16 mar 2023</td>
+                                <td class="song-time">5:31</td>
+                            </tr>
+                            <tr>
+                                <td class="song-order">2</td>
+                                <td class="song-info">
+                                    <div class="song-img">
+                                        <img src="./assets/nf-playlist-assets/hope.jpg" alt="HOPE album cover">
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <p class="song-title">HOPE</p>
+                                        <p class="singer-name">NF</p>
+                                    </div>
+                                </td>
+                                <td class="album-title">
+                                    HOPE
+                                </td>
+                                <td class="song-date">16 mar 2023</td>
+                                <td class="song-time">4:24</td>
+                            </tr>
+                            <tr>
+                                <td class="song-order">3</td>
+                                <td class="song-info">
+                                    <div class="song-img">
+                                        <img src="./assets/nf-playlist-assets/hope.jpg" alt="HOPE album cover">
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <p class="song-title">MOTTO</p>
+                                        <p class="singer-name">NF</p>
+                                    </div>
+                                </td>
+                                <td class="album-title">
+                                    HOPE
+                                </td>
+                                <td class="song-date">16 mar 2023</td>
+                                <td class="song-time">3:37</td>
+                            </tr>
+                            <tr>
+                                <td class="song-order">4</td>
+                                <td class="song-info">
+                                    <div class="song-img">
+                                        <img src="./assets/nf-playlist-assets/clouds.jpg" alt="clouds album cover">
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <p class="song-title">STORY</p>
+                                        <p class="singer-name">NF</p>
+                                    </div>
+                                </td>
+                                <td class="album-title">
+                                    CLOUDS(THE MIXTAPE)
+                                </td>
+                                <td class="song-date">16 mar 2023</td>
+                                <td class="song-time">4:40</td>
+                            </tr>
+                            <tr>
+                                <td class="song-order">5</td>
+                                <td class="song-info">
+                                    <div class="song-img">
+                                        <img src="./assets/nf-playlist-assets/hope.jpg" alt="HOPE album cover">
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <p class="song-title">CAREFUL</p>
+                                        <p class="singer-name">NF, Cordae</p>
+                                    </div>
+                                </td>
+                                <td class="album-title">
+                                    HOPE
+                                </td>
+                                <td class="song-date">2 settimane fa</td>
+                                <td class="song-time">3:30</td>
+                            </tr>
+                            <tr>
+                                <td class="song-order">6</td>
+                                <td class="song-info">
+                                    <div class="song-img">
+                                        <img src="./assets/nf-playlist-assets/hope.jpg" alt="HOPE album cover">
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <p class="song-title">MAMA</p>
+                                        <p class="singer-name">NF</p>
+                                    </div>
+                                </td>
+                                <td class="album-title">
+                                    HOPE
+                                </td>
+                                <td class="song-date">2 settimane fa</td>
+                                <td class="song-time">3:38</td>
+                            </tr>
+                            <tr>
+                                <td class="song-order">7</td>
+                                <td class="song-info">
+                                    <div class="song-img">
+                                        <img src="./assets/nf-playlist-assets/hope.jpg" alt="HOPE album cover">
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <p class="song-title">HAPPY</p>
+                                        <p class="singer-name">NF</p>
+                                    </div>
+                                </td>
+                                <td class="album-title">
+                                    HOPE
+                                </td>
+                                <td class="song-date">2 settimane fa</td>
+                                <td class="song-time">4:03</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </section>
+            </div>
+        </main>
+    </div>
+    <section class="command-bar flex">
+        <div class="song-commands flex">
+            <div class="song-img">
+                <img src="./assets/sinister.jpeg" alt="sinister playlist img">
+            </div>
+            <div class="song-info">
+                <div class="song-title">Sinister</div>
+                <div class="song-album">Brano</div>
+                <div class="song-artist">Nome</div>
+            </div>
+            <div class="likeAdd-box flex">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="player-commands flex">
+                <i class="command fa-solid fa-shuffle"></i>
+                <i class="command fa-solid fa-backward-step"></i>
+                <div class="playpause">
+                    <input type="checkbox" id="playpause" name="check"/>
+                    <label for="playpause"></label>
+                </div>              
+                <i class="command fa-solid fa-forward-step"></i>
+                <i class="command fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="song-time flex">
+                <p class="time-number">0:25</p>
+                <div class="line">
+                    <div class="line-played"></div>
+                </div>
+                <p class="time-number">4:35</p>
+            </div>
+        </div>
+        <div class="volume-screen-commands flex">
+            <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="line">
+                <div class="line-played"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
