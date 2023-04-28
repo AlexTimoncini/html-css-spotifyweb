@@ -1,0 +1,60 @@
+/*--------------GENERAL STYLE--------------*/
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*--------------SITE SECTION--------------*/
+
+.main{
+    background-color: #121212;
+}
+
+.header{
+    background: none;
+
+}
+
+/* UPGRADE/PROFILE SECTION */
+
+.upgrade-banner nav{
+    width: 50%;
+}
+
+.search-bar-box{
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+    flex-grow: 1;
+}
+
+.search-bar-box input[type="text"]{
+    border: none;
+    color: #121212;
+    padding-left: 1rem;
+    width: 80%;
+    min-width: 150px;
+}
+
+.search-bar-box img{
+    filter: invert(1);
+    cursor: pointer;
+}
+
+/*--------------MEDIA QUERIES--------------*/
+@media screen and (min-width: 639px){
+}
+
+@media screen and (min-width: 878px){
+}
+
+@media screen and (min-width: 1440px){
+}

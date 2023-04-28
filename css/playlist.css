@@ -37,6 +37,7 @@ box-sizing: border-box;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    flex-shrink: 0;
 }
 
 .upgrade-btn{
@@ -286,9 +287,6 @@ i.fa-circle{
     width: calc(100vw - 230px);
     }
 
-    .upgrade-btn{
-        display: inline-block;
-    }
     i.fa-caret-down{
         padding-right: 0.2rem;
         display: block;
@@ -296,6 +294,10 @@ i.fa-circle{
 }
 
 @media screen and (min-width: 878px){
+    .upgrade-btn{
+        display: inline-block;
+    }
+
     .playlist-title{
         font-size: 3rem;
     }
