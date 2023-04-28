@@ -48,7 +48,6 @@ input[type="checkbox"]{
     height: calc(100vh - 90px);
     background-color: #000000;
     padding-top: 0.25rem;
-    padding-bottom: 0.56rem;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -107,8 +106,9 @@ input[type="checkbox"]{
 .playlist{
     padding-top: 1rem;
     padding-left: 1.25rem;
+    padding-right: 1.25rem;
     list-style: none;
-    
+    width: 100%;
 }
 
 .playlist .heading{
@@ -130,6 +130,16 @@ input[type="checkbox"]{
 
 .add-playlist:hover .new-playlist{
     background-color: #fff;
+}
+
+.playlist-list{
+    list-style: none;
+    border-top: 1px solid #a3a3a3;
+    border-bottom: 1px solid #a3a3a3;
+    margin-top: 2rem;
+    overflow: auto;
+    padding-bottom: 1rem;
+    max-height: 240px;
 }
 
 .new-playlist{
@@ -162,6 +172,7 @@ input[type="checkbox"]{
     width: 100%;
     justify-content: center;
     transition: all 0.2s ease;
+    padding-top: 1rem;
 }
 
 .download:hover{
@@ -170,11 +181,12 @@ input[type="checkbox"]{
 
 .download-btn{
     width: 15px;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .profile{
-    line-height: 25px;
+    align-items: center;
+    padding-bottom: 1rem;
 }
 
 .profile-btn{
@@ -188,6 +200,15 @@ input[type="checkbox"]{
 
 .profile-name{
     color:#fff;
+}
+
+.song-played-img{
+    width: 100%;
+}
+
+.song-played-img img{
+    width: 100%;
+    display: block;
 }
 
 /* MAIN SECTION */
@@ -540,7 +561,8 @@ input[type="checkbox"]{
         border-left: 3px solid #adff2f;
     }
     
-    .side-bar .lower.wrapper{
+    .side-bar .download,
+    .side-bar .profile{
         padding-left: 1.25rem;
         padding-right: 1.25rem;
     }
