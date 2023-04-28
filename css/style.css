@@ -115,7 +115,7 @@ input[type="checkbox"]{
     font-size: 0.9rem;
     color: white;
     font-weight: bold;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .add-playlist{
@@ -161,6 +161,10 @@ input[type="checkbox"]{
     transition: all 0.2s ease;
     color: #6e6e6e;
     text-decoration: none;
+}
+
+.playlist-name.active a{
+    color: #adff2f;
 }
 
 .playlist-name a:hover{
