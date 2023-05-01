@@ -22,7 +22,3 @@ box-sizing: border-box;
     padding: 2rem 1rem;
     overflow-x: hidden;
 }
-
-.playlist-img img{
-    width: 100%;
-}

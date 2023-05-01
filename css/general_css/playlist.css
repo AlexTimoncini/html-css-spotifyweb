@@ -94,6 +94,7 @@ i.fa-caret-down{
 .playlist-img img{
     width: 50%;
     aspect-ratio: 1 / 1;
+    flex-grow: 1;
 }
 
 .playlist-info{

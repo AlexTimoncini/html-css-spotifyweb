@@ -91,6 +91,7 @@ p.relevants{
 
 .my-playlists .playlist-img img{
     width: 50%;
+    flex-grow: 1;
 }
 
 /*--------------MEDIA QUERIES--------------*/
